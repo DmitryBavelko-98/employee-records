@@ -80,6 +80,8 @@ class App extends Component {
 
   filterPost = (items, filter) => {
     switch (filter) {
+      case 'increase':
+        return items.filter(item => item.increase);
       case 'promotion':
         return items.filter(item => item.promotion);
       case 'salary':
