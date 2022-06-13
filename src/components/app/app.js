@@ -53,17 +53,6 @@ class App extends Component {
     }));
   }
 
-  // onTogglePromotion = (id) => {
-  //   this.setState(({data}) => ({
-  //     data: data.map(item => {
-  //       if (item.id === id) {
-  //         return {...item, promotion: !item.promotion}
-  //       }
-  //       return item;
-  //     })
-  //   }))
-  // }
-
   searchEmp = (items, term) => {
     if (term.length === 0) {
       return items;

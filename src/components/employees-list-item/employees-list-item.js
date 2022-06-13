@@ -1,4 +1,3 @@
-import { Component } from 'react/cjs/react.production.min';
 import './employees-list-item.scss';
 
 const EmployeesListItem = (props) => {
