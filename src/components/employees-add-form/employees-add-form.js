@@ -28,7 +28,6 @@ class EmployeesAddForm extends Component {
 
     render() {
         const {name, salary} = this.state;
-
         return (
             <div className="app-add-form">
                 <h3>Add new employee</h3>
@@ -41,7 +40,8 @@ class EmployeesAddForm extends Component {
                         placeholder="Name" 
                         name="name"
                         value={name}
-                        onChange={this.onValueChange}/>
+                        onChange={this.onValueChange}
+                        required/>
                     <input type="number"
                         required
                         className="form-control new-post-label"
