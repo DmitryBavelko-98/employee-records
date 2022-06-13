@@ -1,5 +1,5 @@
 import { Component } from 'react/cjs/react.production.min';
-import './employees-list-item.css';
+import './employees-list-item.scss';
 
 const EmployeesListItem = (props) => {
     const {name, salary, onDelete, onToggleProp, onChangeSalary, increase, promotion} = props;
@@ -13,7 +13,11 @@ const EmployeesListItem = (props) => {
     }
     return (
         <li className={classNames}>
-            <span onClick={onToggleProp} data-toggle="promotion" className="list-group-item-label">{name}</span>
+            <span 
+                onClick={onToggleProp} 
+                data-toggle="promotion" 
+                className="list-group-item-label"
+                style={{fontSize: 22}}>{name}</span>
             <input onChange={onChangeSalary} type="text" className="list-group-item-input" defaultValue={salary + '$'}/>
             <div className='d-flex justify-content-center align-items-center'>
                 <button type="button"
