@@ -1,2 +1,2 @@
 # employee-records
-Employee-records app with React
+Employee-records app created with React
